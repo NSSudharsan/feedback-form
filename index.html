@@ -1,0 +1,227 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title> feedback form </title>
+<style>
+    
+    body{
+        background:url(giphy.gif);
+    }
+    a{
+        position: absolute;
+        color: darkturquoise;
+    }
+    .box{
+                    position:absolute;
+                    top: 1%;
+                    left: 10%;
+                    right: 10%;
+                    padding: 15px;
+                    background:rgba(80,160,100,.95) ;
+                    box-sizing:border-box;
+                    box-shadow: 15px 25px rgba(0,0,0,.5);
+                    border-radius: 20px;
+                    
+    }
+    ol{
+        padding:0% 11%;
+        font-family: Times New Roman;
+        font-size: 20px;
+    }
+        
+#r1 ,label{
+            cursor: pointer;
+            font-style: oblique;
+    }
+    
+        .OBJ-3 { 
+                    cursor: pointer;
+                    border-radius:20PX;
+                    background-color:blueviolet;
+                    font-family:sans-serif;
+                    font-size:18px;
+                    color:#ffffff;
+                    font-style:bold;
+                    font-variant:small-caps;
+                    text-align:center;
+                }
+        .OBJ-3:hover{
+                    cursor: pointer;
+                    background:rgb(0,117,0);
+                    font-style:oblique;
+                    color:black;
+                    }
+    table{
+         
+        padding: 0 10%;
+        font-family: cursive;
+        font-style: bold;
+        font-size: 20px;
+    }
+
+</style>
+    
+</head>
+    
+<body>
+    <a href="dashboard.php">Dashboard</a>
+<div class="box">
+    <h2 style="text-align: center;color:darkblue;">STUDENT'S&nbsp;&nbsp;FEEDBACK&nbsp;&nbsp;FORM</h2>
+<form method="POST" action="fb.php" class="form-control" >
+    <convas size="1px">
+<table align="center" cellspacing="5px">
+    <tr>
+        <td>Academic Year :<input type="year" value="" name="year" autofocus  required/></td>
+        <td>Name of The Faculty :<select name="F_name" required>
+                                        <option></option>
+                                        <option value="Bajulunisha. A">Bajulunisha. A</option>
+                                        <option value="Dhanamathi. A">Dhanamathi. A</option>
+                                        <option value="Gunasundari. C">Gunasundari. C</option>
+                                        <option value="Gunasekaran. K">Gunasekaran. K</option>
+                                        <option value="Kannan. R">Kannan. R</option>
+                                        <option value="Sivakumar. K">Sivakumar. K</option>
+                                        <option value="Suganthi. M">Suganthi. M</option>
+                                        <option value="Tamilselvi. M">Tamilselvi. M</option>
+                                        <option value="Vishnupriya. S">Vishnupriya. S</option>
+                                </select></td>
+    </tr>
+    <tr>
+        <td>Course &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<select name="course" required>
+        <option></option>
+        <option value="BE">BE</option>
+        <option value="ME">ME</option>
+        </select></td>
+        <td>Semester &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<select name="sem" required>
+        <option></option>
+        <option value="1">I</option>
+        <option value="2">II</option>
+        <option value="3">III</option>
+        <option value="4">IV</option>
+        <option value="5">V</option>
+        <option value="6">VI</option>
+        <option value="7">VII</option>
+        <option value="8">VIII</option>
+        </select></td>
+    </tr>
+    <tr><td>Subject :<select name="sub" required>
+        <option></option>
+        <optgroup label="------------------------------ Sem - I ------------------------------">
+            
+        </optgroup>
+        <optgroup label="------------------------------ Sem - II ------------------------------">
+            <option value="HS8251">Technical English-HS8251</option>
+            <option value="MA8251">Engineering Mathematics-II -MA8251</option>
+            <option value="PH8252">Physics for Information Science-PH8252</option>
+            <option value="BE8255">Basic E E&amp;M Engineering-BE8255</option>
+            <option value="GE8291">Environmental Science &amp; Engineering-GE8291</option>
+            <option value="CS8251">Programming in C -CS8251</option>
+        </optgroup>
+        <optgroup label="------------------------------ Sem - III ------------------------------">
+        </optgroup>
+        <optgroup label="------------------------------ Sem - IV ------------------------------">
+            <option value="MA8402">Probability and Queueing Theory-MA8402</option>
+            <option value="CS8491">Computer Architecture -CS8491</option>
+            <option value="CS8492">Database Management Systems -CS8492</option>
+            <option value="CS8451">Design &amp; Analysis of Algorithems -CS8451</option>
+            <option value="CS8493">Operating Systems -CS8493</option>
+            <option value="CS8494">Software Engineering -CS8494</option>
+        </optgroup>
+        <optgroup label="------------------------------ Sem - V ------------------------------">
+        </optgroup>
+        <optgroup label="------------------------------ Sem - VI ------------------------------">
+            <option value="CS8651">Internet Programming -CS8651</option>
+            <option value="CS8691">Artificial Intelligence -CS8691</option>
+            <option value="CS8601">Mobile Computing -CS8601</option>
+            <option value="CS8602">Compiler Design -CS8602</option>
+            <option value="CS8603">Distributed Systems -CS8603</option>
+            <option value="IT8076">Software Testing -IT8076</option>
+        </optgroup>
+        <optgroup label="------------------------------ Sem - VII ------------------------------">
+        </optgroup>
+        <optgroup label="------------------------------ Sem - VIII ------------------------------">
+        <option value="CS6801">Multi Core Architectures and Programming-CS6801</option>
+        <option value="CS6010">Social Network Analysis-CS6010</option>
+        <option value="MG6088">Software Project Management-MG6088</option>
+        </optgroup>   
+        </select></td><td>Date of the Feedback :<input type="date" value="" name="date"/></td></tr>
+    </table></convas>
+    <legend align=center style="background-color: aliceblue; font-size: 20px;border:20px; color:darkred;font-family:monospace"> For getting in through Student</legend>
+    <ol>
+       <li><b>Has the Teacher covered entier Syllabus as prescribed by University/College/Board ? <br/>  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="1" name="q1" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q1" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q1" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q1" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q1" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+        <br />
+        <li><b>Has the Teacher covered relevant topics beyond syllabus  <br/> </b>&nbsp;&nbsp;&nbsp;&nbsp; 
+          <label><input type="radio" value="1" name="q2" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q2" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q2" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q2" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q2" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+        <br />
+        <li><b>Ellectiveness of Teacher in terms of:<br /> &#9679;Technical content/course content<br/>&#9679;Communication skills<br />&#9679;Use of teaching aids<br />  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="1" name="q3" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q3" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q3" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q3" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q3" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+        <li><b>Pace on Which documents were covered <br/>  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="1" name="q4" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q4" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q4" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q4" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q4" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+        <li><b>Motivation and inspiration for students to learn <br/>  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="1" name="q5" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q5" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q5" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q5" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q5" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+        <li><b>Support for the development of Student's skill<br/>&#9679;Practical demonstration<br />&#9679;Hands on training<br /></b>&nbsp;&nbsp;&nbsp;&nbsp; 
+          <label><input type="radio" value="1" name="q6" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q6" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q6" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q6" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q6" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+        <li><b>Clarity of expectations of students <br/>  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="1" name="q7" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q7" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q7" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q7" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q7" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+        <li><b>Feedback provided on Student's progress <br/>  </b>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" value="1" name="q8" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="2" name="q8" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q8" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q8" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q8" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+        <br />
+            <li><b>Willingness to Other help and advice to students. <br/></b>&nbsp;&nbsp;&nbsp;&nbsp;  
+          <label><input type="radio" value="1" name="q9" id="r1" required>Very Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><input type="radio" value="2" name="q9" id="r1">Poor</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="3" name="q9" id="r1">Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="4" name="q9" id="r1">Very Good</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label><input type="radio" value="5" name="q9" id="r1">Excellent</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+    </ol>
+    
+    <center><input type="submit" name="submit" class="OBJ-3" /></center>
+    </form>
+</div>
+</body>
+</html>
